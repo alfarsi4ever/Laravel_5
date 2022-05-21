@@ -17,6 +17,6 @@ class Product extends Model
 
     public function manufacture(){
         // return $this->belongsTo(Manufacture::class);
-        return $this->belongsTo('app\Manufacture');
+        return $this->belongsTo('app\Manufacture'::class, 'company_id');
     }
 }

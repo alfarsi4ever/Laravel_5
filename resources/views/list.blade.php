@@ -77,6 +77,7 @@
               <th>Product Name:</th>
               <th>Product Color:</th>
               <th>Product Price $:</th>
+              <th>Product Manufacture:</th>
               <th>Product Status:</th>
             </tr>
         @foreach ($ProductsInactive as $product)
@@ -85,6 +86,7 @@
                 <td>{{$product->name}}</td>
                 <td>{{$product->color}}</td>
                 <td>{{$product->price}}</td>
+                <td>{{$product->manufacture->companyName}}</td>
                 {{-- @php
                     $result = ($product->status == 0) ? 'active' : 'Inactive'
                 @endphp --}}
